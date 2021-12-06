@@ -4,4 +4,6 @@
 
 ## useEffect
 
+## useContext
+
 ## useReducer
