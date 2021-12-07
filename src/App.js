@@ -9,6 +9,7 @@ import ContextA from "./funcComponents/ContextSample/ContextA";
 import { UseReducer } from "./funcComponents/UseReducer";
 import { Counter } from "./funcComponents/Counter";
 import ContextC from "./funcComponents/ContextSample/ContextC";
+import UseCallback from "./funcComponents/UseCallback";
 export const UserCount = createContext();
 
 export default function App() {
@@ -23,12 +24,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>Learn useContext</h1>
+      <UseCallback />
       {/* <UseReducer /> */}
       {/* <Counter /> */}
-      <ContextA value={value} />
+      {/* <ContextA value={value} />
       <UserCount.Provider value={value}>
         <ContextC />
-      </UserCount.Provider>
+      </UserCount.Provider> */}
     </div>
   );
 }
