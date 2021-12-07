@@ -8,6 +8,7 @@ import React, { createContext, useState } from "react";
 import ContextA from "./funcComponents/ContextSample/ContextA";
 import { UseReducer } from "./funcComponents/UseReducer";
 import { Counter } from "./funcComponents/Counter";
+import ContextC from "./funcComponents/ContextSample/ContextC";
 export const UserCount = createContext();
 
 export default function App() {
@@ -23,10 +24,11 @@ export default function App() {
     <div className="App">
       <h1>Learn useContext</h1>
       {/* <UseReducer /> */}
-      <Counter />
-      {/* <UserCount.Provider value={value}>
-        <ContextA value="100" />
-      </UserCount.Provider> */}
+      {/* <Counter /> */}
+      <ContextA value={value} />
+      <UserCount.Provider value={value}>
+        <ContextC />
+      </UserCount.Provider>
     </div>
   );
 }
